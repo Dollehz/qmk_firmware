@@ -49,23 +49,26 @@ void process_combo_event(uint16_t combo_index, bool pressed) {
       if (pressed) {
         if (default_layer_state == 0x00000001) {
             default_layer_set(0x00000002);
-            layer_move(1);
+            // layer_move(1);
+            layer_clear();
         }
         else {
             default_layer_set(0x00000001);
-            layer_move(0);
+            // layer_move(0);
+            layer_clear();
         }
       }
       break;
     case GO_HOME:
-      if (pressed) {
-        if (default_layer_state == 0x00000002) {
-            layer_move(1);
-        }
-        else {
-            layer_move(0);
-        }
-      }
+        layer_clear();
+    //   if (pressed) {
+    //     if (default_layer_state == 0x00000002) {
+    //         layer_move(1);
+    //     }
+    //     else {
+    //         layer_move(0);
+    //     }
+    //   }
       break;
   }
 }
@@ -80,9 +83,10 @@ oled_rotation_t oled_init_user(oled_rotation_t rotation) {
 
 
 
-#define NULLYBOI 0
-#define BASE_A 1
-#define BASE_I 2
+// #define NULLYBOI 0
+// #define BASE_A 1
+// #define BASE_I 2
+#define BASE 0
 #define SYMB 4
 #define NAV 8
 #define NUMBER 16
@@ -92,14 +96,17 @@ oled_rotation_t oled_init_user(oled_rotation_t rotation) {
 void oled_render_layer_state(void) {
     oled_write_P(PSTR("Layer: "), false);
     switch (layer_state) {
-        case NULLYBOI:
-            oled_write_ln_P(PSTR("NULLYBOI"), false);
-            break;
-        case BASE_A:
-            oled_write_ln_P(PSTR("BASE_A"), false);
-            break;
-        case BASE_I:
-            oled_write_ln_P(PSTR("BASE_I"), false);
+        // case NULLYBOI:
+        //     oled_write_ln_P(PSTR("NULLYBOI"), false);
+        //     break;
+        // case BASE_A:
+        //     oled_write_ln_P(PSTR("BASE_A"), false);
+        //     break;
+        // case BASE_I:
+        //     oled_write_ln_P(PSTR("BASE_I"), false);
+        //     break;
+        case BASE:
+            oled_write_ln_P(PSTR("BASE"), false);
             break;
         case SYMB:
             oled_write_ln_P(PSTR("SYMB"), false);
