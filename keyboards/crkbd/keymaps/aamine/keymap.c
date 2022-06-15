@@ -31,44 +31,48 @@ qk_tap_dance_action_t tap_dance_actions[] = {
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-	[0] = LAYOUT_split_3x6_3(KC_ESC, KC_A, KC_Z, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_BSPC, KC_TAB, LSFT_T(KC_Q), LCTL_T(KC_S), LALT_T(KC_D), LGUI_T(KC_F), KC_G, KC_H, LGUI_T(KC_J), LALT_T(KC_K), LCTL_T(KC_L), RSFT_T(KC_M), KC_ENT, KC_NO, KC_W, KC_X, KC_C, KC_V, KC_B, KC_N, KC_COMM, KC_DOT, KC_SCLN, KC_EQL, KC_SLSH, TT(5), TT(3), KC_SPC, TD(TD_LSFT_CAPS), TT(2), TT(4)),
-	[1] = LAYOUT_split_3x6_3(KC_ESC, KC_Y, KC_C, KC_L, KC_M, KC_K, KC_Z, KC_F, KC_U, KC_COMM, KC_SCLN, KC_BSPC, KC_TAB, LSFT_T(KC_I), LCTL_T(KC_S), LALT_T(KC_R), LGUI_T(KC_T), KC_G, KC_P, LGUI_T(KC_N), LALT_T(KC_E), LCTL_T(KC_A), RSFT_T(KC_O), KC_ENT, KC_NO, KC_Q, KC_V, KC_W, KC_D, KC_J, KC_B, KC_H, KC_QUOT, KC_DOT, KC_X, KC_SLSH, TT(5), TT(3), KC_SPC, KC_RSFT, TT(2), TT(4)),
+	[0] = LAYOUT_split_3x6_3(KC_ESC, KC_A, KC_Z, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_BSPC, KC_TAB, LSFT_T(KC_Q), LCTL_T(KC_S), LALT_T(KC_D), LGUI_T(KC_F), KC_G, KC_H, LGUI_T(KC_J), LALT_T(KC_K), LCTL_T(KC_L), RSFT_T(KC_M), KC_ENT, KC_NO, KC_W, KC_X, KC_C, KC_V, KC_B, KC_N, KC_COMM, KC_DOT, KC_SCLN, KC_EQL, KC_SLSH, TT(4), TT(3), KC_SPC, TD(TD_LSFT_CAPS), TT(2), TT(5)),
+	[1] = LAYOUT_split_3x6_3(KC_ESC, KC_Y, KC_C, KC_L, KC_M, KC_K, KC_Z, KC_F, KC_U, KC_COMM, KC_SCLN, KC_BSPC, KC_TAB, LSFT_T(KC_I), LCTL_T(KC_S), LALT_T(KC_R), LGUI_T(KC_T), KC_G, KC_P, LGUI_T(KC_N), LALT_T(KC_E), LCTL_T(KC_A), RSFT_T(KC_O), KC_ENT, KC_NO, KC_Q, KC_V, KC_W, KC_D, KC_J, KC_B, KC_H, KC_QUOT, KC_DOT, KC_X, KC_SLSH, TT(4), TT(3), KC_SPC, KC_RSFT, TT(2), TT(5)),
 	[2] = LAYOUT_split_3x6_3(KC_ESC, KC_HASH, KC_AT, KC_QUES, KC_EXLM, KC_PEQL, KC_PSLS, KC_AMPR, KC_PIPE, KC_PERC, KC_BSLS, KC_BSPC, KC_TAB, KC_UNDS, KC_LBRC, KC_LCBR, KC_LPRN, KC_LT, KC_GT, KC_RPRN, KC_RCBR, KC_RBRC, KC_PMNS, KC_ENT, KC_NO, KC_TILD, KC_COLN, KC_CIRC, KC_PAST, KC_QUOT, KC_GRV, KC_PCMM, KC_PDOT, KC_SCLN, KC_DLR, KC_NO, KC_TRNS, KC_TRNS, KC_SPC, KC_RSFT, KC_TRNS, KC_TRNS),
 	[3] = LAYOUT_split_3x6_3(KC_ESC, KC_NO, LGUI(KC_X), LGUI(KC_C), LGUI(KC_V), LSFT(LGUI(KC_4)), KC_NO, LCTL(KC_MINS), LCTL(LSFT(KC_MINS)), KC_PGUP, KC_NO, KC_BSPC, KC_TAB, KC_LSFT, KC_LCTL, KC_LALT, KC_LGUI, KC_NO, KC_LEFT, KC_DOWN, KC_UP, KC_RGHT, KC_NO, KC_ENT, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_HOME, KC_END, KC_PGDN, KC_NO, KC_NO, KC_TRNS, KC_TRNS, KC_SPC, KC_RSFT, KC_TRNS, KC_TRNS),
-	[4] = LAYOUT_split_3x6_3(KC_ESC, KC_NO, KC_NO, KC_PMNS, KC_PPLS, KC_PEQL, KC_PCMM, KC_PAST, KC_PSLS, KC_PDOT, KC_NO, KC_BSPC, KC_TAB, LSFT_T(KC_P1), LCTL_T(KC_P2), LALT_T(KC_P3), LGUI_T(KC_P4), KC_P5, KC_P6, LGUI_T(KC_P7), LALT_T(KC_P8), LCTL_T(KC_P9), LSFT_T(KC_P0), KC_ENT, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_F12, KC_TRNS, KC_TRNS, KC_SPC, KC_RSFT, KC_TRNS, KC_TRNS),
-	[5] = LAYOUT_split_3x6_3(KC_NO, KC_NO, KC_NO, KC_MS_U, KC_NO, KC_NO, KC_ACL0, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_MS_L, KC_MS_D, KC_MS_R, KC_BTN1, KC_ACL1, KC_VOLD, KC_VOLU, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_BTN2, KC_NO, KC_ACL2, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_TRNS, KC_TRNS, KC_NO, KC_NO, KC_TRNS, KC_TRNS)
+	[4] = LAYOUT_split_3x6_3(KC_ESC, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_PSLS, KC_P7, KC_P8, KC_P9, KC_PMNS, KC_BSPC, KC_TAB, LSFT_T(KC_F6), LCTL_T(KC_F7), LALT_T(KC_F8), LGUI_T(KC_F9), KC_F10, KC_PAST, LGUI_T(KC_P4), LALT_T(KC_P5), LCTL_T(KC_P6), LSFT_T(KC_PPLS), KC_ENT, KC_NO, KC_NO, KC_F11, KC_F12, KC_NO, KC_NO, KC_PCMM, KC_P1, KC_P2, KC_P3, KC_PEQL, KC_PDOT, KC_TRNS, KC_TRNS, KC_SPC, KC_P0, KC_TRNS, KC_TRNS),
+	[5] = LAYOUT_split_3x6_3(KC_NO, KC_NO, KC_NO, KC_MS_U, KC_NO, KC_NO, KC_ACL0, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_MS_L, KC_MS_D, KC_MS_R, KC_BTN1, KC_ACL1, KC_VOLD, KC_VOLU, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_BTN2, KC_NO, KC_ACL2, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_TRNS, KC_TRNS, KC_NO, KC_NO, KC_TRNS, KC_TRNS),
+	[6] = LAYOUT_split_3x6_3(KC_ESC, KC_NO, KC_A, KC_Z, KC_E, KC_R, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_BSPC, KC_LSFT, KC_NO, KC_Q, KC_S, KC_D, KC_F, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_ENT, KC_LCTL, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_TRNS, KC_TRNS, KC_SPC, KC_NO, KC_TRNS, KC_TRNS)
 };
 
 enum combo_events {
-  TOGGLE_DEFAULT,
+//   TOGGLE_DEFAULT,
+  TOGGLE_GAMING,
   GO_HOME,
   COMBO_LENGTH
 };
 uint16_t COMBO_LEN = COMBO_LENGTH; // remove the COMBO_COUNT define and use this instead!
 
-const uint16_t PROGMEM toggleDef[] = {TT(2),TT(3),TT(4),TT(5), COMBO_END};
+const uint16_t PROGMEM toggleGamingMode[] = {TT(2),TT(3),TT(4),TT(5), COMBO_END};
 const uint16_t PROGMEM home[] = {TT(2),TT(3), COMBO_END};
 
 combo_t key_combos[] = {
-  [TOGGLE_DEFAULT] = COMBO_ACTION(toggleDef),
+//   [TOGGLE_DEFAULT] = COMBO_ACTION(toggleDef),
+  [TOGGLE_GAMING] = COMBO(toggleGamingMode, TO(6)),
   [GO_HOME] = COMBO_ACTION(home),
+
 };
 
 void process_combo_event(uint16_t combo_index, bool pressed) {
   switch(combo_index) {
-    case TOGGLE_DEFAULT:
-      if (pressed) {
-        if (default_layer_state == 0x00000001) {
-            default_layer_set(0x00000002);
-            // layer_move(1);
-            layer_clear();
-        }
-        else {
-            default_layer_set(0x00000001);
-            // layer_move(0);
-            layer_clear();
-        }
-      }
+    // case TOGGLE_DEFAULT:
+    //   if (pressed) {
+    //     if (default_layer_state == 0x00000001) {
+    //         default_layer_set(0x00000002);
+    //         // layer_move(1);
+    //         layer_clear();
+    //     }
+    //     else {
+    //         default_layer_set(0x00000001);
+    //         // layer_move(0);
+    //         layer_clear();
+    //     }
+    //   }
       break;
     case GO_HOME:
         layer_clear();
@@ -102,6 +106,8 @@ oled_rotation_t oled_init_user(oled_rotation_t rotation) {
 #define NAV 8
 #define NUMBER 16
 #define MOUSE 32
+#define GAME 64
+
 
 
 void oled_render_layer_state(void) {
@@ -134,6 +140,9 @@ void oled_render_layer_state(void) {
             break;
         case MOUSE:
             oled_write_ln_P(PSTR("MOUSE"), false);
+            break;
+        case GAME:
+            oled_write_ln_P(PSTR("GAME"), false);
             break;
         default:
             oled_write_ln_P(PSTR("HMMMM"), false);
