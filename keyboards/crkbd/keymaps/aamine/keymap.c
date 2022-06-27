@@ -31,13 +31,20 @@ qk_tap_dance_action_t tap_dance_actions[] = {
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-	[0] = LAYOUT_split_3x6_3(KC_ESC, KC_A, KC_Z, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_BSPC, KC_TAB, LSFT_T(KC_Q), LCTL_T(KC_S), LALT_T(KC_D), LGUI_T(KC_F), KC_G, KC_H, LGUI_T(KC_J), LALT_T(KC_K), LCTL_T(KC_L), RSFT_T(KC_M), KC_ENT, KC_NO, KC_W, KC_X, KC_C, KC_V, KC_B, KC_N, KC_COMM, KC_DOT, KC_SCLN, KC_EQL, KC_SLSH, TT(4), TT(3), KC_SPC, TD(TD_LSFT_CAPS), TT(2), TT(5)),
-	[1] = LAYOUT_split_3x6_3(KC_ESC, KC_Y, KC_C, KC_L, KC_M, KC_K, KC_Z, KC_F, KC_U, KC_COMM, KC_SCLN, KC_BSPC, KC_TAB, LSFT_T(KC_I), LCTL_T(KC_S), LALT_T(KC_R), LGUI_T(KC_T), KC_G, KC_P, LGUI_T(KC_N), LALT_T(KC_E), LCTL_T(KC_A), RSFT_T(KC_O), KC_ENT, KC_NO, KC_Q, KC_V, KC_W, KC_D, KC_J, KC_B, KC_H, KC_QUOT, KC_DOT, KC_X, KC_SLSH, TT(4), TT(3), KC_SPC, KC_RSFT, TT(2), TT(5)),
-	[2] = LAYOUT_split_3x6_3(KC_ESC, KC_HASH, KC_AT, KC_QUES, KC_EXLM, KC_PEQL, KC_PSLS, KC_AMPR, KC_PIPE, KC_PERC, KC_BSLS, KC_BSPC, KC_TAB, KC_UNDS, KC_LBRC, KC_LCBR, KC_LPRN, KC_LT, KC_GT, KC_RPRN, KC_RCBR, KC_RBRC, KC_PMNS, KC_ENT, KC_NO, KC_TILD, KC_COLN, KC_CIRC, KC_PAST, KC_QUOT, KC_GRV, KC_PCMM, KC_PDOT, KC_SCLN, KC_DLR, KC_NO, KC_TRNS, KC_TRNS, KC_SPC, KC_RSFT, KC_TRNS, KC_TRNS),
-	[3] = LAYOUT_split_3x6_3(KC_ESC, KC_NO, LGUI(KC_X), LGUI(KC_C), LGUI(KC_V), LSFT(LGUI(KC_4)), KC_NO, LCTL(KC_MINS), LCTL(LSFT(KC_MINS)), KC_PGUP, KC_NO, KC_BSPC, KC_TAB, KC_LSFT, KC_LCTL, KC_LALT, KC_LGUI, KC_NO, KC_LEFT, KC_DOWN, KC_UP, KC_RGHT, KC_NO, KC_ENT, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_HOME, KC_END, KC_PGDN, KC_NO, KC_NO, KC_TRNS, KC_TRNS, KC_SPC, KC_RSFT, KC_TRNS, KC_TRNS),
-	[4] = LAYOUT_split_3x6_3(KC_ESC, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_PSLS, KC_P7, KC_P8, KC_P9, KC_PMNS, KC_BSPC, KC_TAB, LSFT_T(KC_F6), LCTL_T(KC_F7), LALT_T(KC_F8), LGUI_T(KC_F9), KC_F10, KC_PAST, LGUI_T(KC_P4), LALT_T(KC_P5), LCTL_T(KC_P6), LSFT_T(KC_PPLS), KC_ENT, KC_NO, KC_NO, KC_F11, KC_F12, KC_NO, KC_NO, KC_PCMM, KC_P1, KC_P2, KC_P3, KC_PEQL, KC_PDOT, KC_TRNS, KC_TRNS, KC_SPC, KC_P0, KC_TRNS, KC_TRNS),
-	[5] = LAYOUT_split_3x6_3(KC_NO, KC_NO, KC_NO, KC_MS_U, KC_NO, KC_NO, KC_ACL0, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_MS_L, KC_MS_D, KC_MS_R, KC_BTN1, KC_ACL1, KC_VOLD, KC_VOLU, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_BTN2, KC_NO, KC_ACL2, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_TRNS, KC_TRNS, KC_NO, KC_NO, KC_TRNS, KC_TRNS),
-	[6] = LAYOUT_split_3x6_3(KC_ESC, KC_NO, KC_A, KC_Z, KC_E, KC_R, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_BSPC, KC_LSFT, KC_NO, KC_Q, KC_S, KC_D, KC_F, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_ENT, KC_LCTL, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_TRNS, KC_TRNS, KC_SPC, KC_NO, KC_TRNS, KC_TRNS)
+    // azerty
+	[0] = LAYOUT_split_3x6_3(KC_ESC, KC_A, KC_Z, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_BSPC, KC_TAB, LSFT_T(KC_Q), LCTL_T(KC_S), LALT_T(KC_D), LGUI_T(KC_F), KC_G, KC_H, LGUI_T(KC_J), LALT_T(KC_K), LCTL_T(KC_L), RSFT_T(KC_M), KC_ENT, KC_NO, KC_W, KC_X, KC_C, KC_V, KC_B, KC_N, KC_COMM, KC_DOT, KC_SCLN, KC_EQL, KC_SLSH, TT(3), TT(5), KC_SPC, TD(TD_LSFT_CAPS), TT(4), TT(6)),
+    // raar ding
+	[1] = LAYOUT_split_3x6_3(KC_ESC, KC_Y, KC_C, KC_L, KC_M, KC_K, KC_Z, KC_F, KC_U, KC_COMM, KC_SCLN, KC_BSPC, KC_TAB, LSFT_T(KC_I), LCTL_T(KC_S), LALT_T(KC_R), LGUI_T(KC_T), KC_G, KC_P, LGUI_T(KC_N), LALT_T(KC_E), LCTL_T(KC_A), RSFT_T(KC_O), KC_ENT, KC_NO, KC_Q, KC_V, KC_W, KC_D, KC_J, KC_B, KC_H, KC_QUOT, KC_DOT, KC_X, KC_SLSH, TT(3), TT(5), KC_SPC, KC_RSFT, TT(4), TT(6)),
+    // game
+	[2] = LAYOUT_split_3x6_3(KC_ESC, KC_NO, KC_A, KC_Z, KC_E, KC_R, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_BSPC, KC_LSFT, KC_NO, KC_Q, KC_S, KC_D, KC_F, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_ENT, KC_LCTL, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_TRNS, KC_TRNS, KC_SPC, KC_NO, KC_TRNS, KC_TRNS),
+    // number
+	[3] = LAYOUT_split_3x6_3(KC_ESC, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_PSLS, KC_P7, KC_P8, KC_P9, KC_PMNS, KC_BSPC, KC_TAB, LSFT_T(KC_F6), LCTL_T(KC_F7), LALT_T(KC_F8), LGUI_T(KC_F9), KC_F10, KC_PAST, LGUI_T(KC_P4), LALT_T(KC_P5), LCTL_T(KC_P6), LSFT_T(KC_PPLS), KC_ENT, KC_NO, KC_NO, KC_F11, KC_F12, KC_NO, KC_NO, KC_PCMM, KC_P1, KC_P2, KC_P3, KC_PEQL, KC_PDOT, KC_TRNS, KC_TRNS, KC_SPC, KC_P0, KC_TRNS, KC_TRNS),
+    // symb
+	[4] = LAYOUT_split_3x6_3(KC_ESC, KC_HASH, KC_AT, KC_QUES, KC_EXLM, KC_PEQL, KC_PSLS, KC_AMPR, KC_PIPE, KC_PERC, KC_BSLS, KC_BSPC, KC_TAB, KC_UNDS, KC_LBRC, KC_LCBR, KC_LPRN, KC_LT, KC_GT, KC_RPRN, KC_RCBR, KC_RBRC, KC_PMNS, KC_ENT, KC_NO, KC_TILD, KC_COLN, KC_CIRC, KC_PAST, KC_QUOT, KC_GRV, KC_PCMM, KC_PDOT, KC_SCLN, KC_DLR, KC_NO, KC_TRNS, KC_TRNS, KC_SPC, KC_RSFT, KC_TRNS, KC_TRNS),
+    // nav
+	[5] = LAYOUT_split_3x6_3(KC_ESC, KC_NO, LGUI(KC_X), LGUI(KC_C), LGUI(KC_V), LSFT(LGUI(KC_4)), KC_NO, LCTL(KC_MINS), LCTL(LSFT(KC_MINS)), KC_PGUP, KC_NO, KC_BSPC, KC_TAB, KC_LSFT, KC_LCTL, KC_LALT, KC_LGUI, KC_NO, KC_LEFT, KC_DOWN, KC_UP, KC_RGHT, KC_NO, KC_ENT, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_HOME, KC_END, KC_PGDN, KC_NO, KC_NO, KC_TRNS, KC_TRNS, KC_SPC, KC_RSFT, KC_TRNS, KC_TRNS),
+    // mouse
+	[6] = LAYOUT_split_3x6_3(KC_NO, KC_NO, KC_NO, KC_MS_U, KC_NO, KC_NO, KC_ACL0, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_MS_L, KC_MS_D, KC_MS_R, KC_BTN1, KC_ACL1, KC_VOLD, KC_VOLU, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_BTN2, KC_NO, KC_ACL2, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_TRNS, KC_TRNS, KC_NO, KC_NO, KC_TRNS, KC_TRNS),
 };
 
 enum combo_events {
@@ -48,12 +55,12 @@ enum combo_events {
 };
 uint16_t COMBO_LEN = COMBO_LENGTH; // remove the COMBO_COUNT define and use this instead!
 
-const uint16_t PROGMEM toggleGamingMode[] = {TT(2),TT(3),TT(4),TT(5), COMBO_END};
-const uint16_t PROGMEM home[] = {TT(2),TT(3), COMBO_END};
+const uint16_t PROGMEM toggleGamingMode[] = {TT(3),TT(4),TT(5),TT(6), COMBO_END};
+const uint16_t PROGMEM home[] = {TT(5),TT(4), COMBO_END};
 
 combo_t key_combos[] = {
 //   [TOGGLE_DEFAULT] = COMBO_ACTION(toggleDef),
-  [TOGGLE_GAMING] = COMBO(toggleGamingMode, TO(6)),
+  [TOGGLE_GAMING] = COMBO(toggleGamingMode, TO(2)),
   [GO_HOME] = COMBO_ACTION(home),
 
 };
@@ -102,52 +109,86 @@ oled_rotation_t oled_init_user(oled_rotation_t rotation) {
 // #define BASE_A 1
 // #define BASE_I 2
 #define BASE 0
-#define SYMB 4
-#define NAV 8
-#define NUMBER 16
-#define MOUSE 32
-#define GAME 64
+#define GAME 4
+#define NUMBER 8
+#define SYMB 16
+#define NAV 32
+#define MOUSE 64
 
 
 
 void oled_render_layer_state(void) {
     oled_write_P(PSTR("Layer: "), false);
-    switch (layer_state) {
-        // case NULLYBOI:
-        //     oled_write_ln_P(PSTR("NULLYBOI"), false);
-        //     break;
-        // case BASE_A:
-        //     oled_write_ln_P(PSTR("BASE_A"), false);
-        //     break;
-        // case BASE_I:
-        //     oled_write_ln_P(PSTR("BASE_I"), false);
-        //     break;
-        case BASE:
-            oled_write_ln_P(PSTR("BASE"), false);
-            break;
-        case SYMB:
-        case SYMB|NUMBER:
-        case SYMB|NUMBER|MOUSE:
-            oled_write_ln_P(PSTR("SYMB"), false);
-            break;
-        case NAV:
-        case NAV|NUMBER:
-        case NAV|NUMBER|MOUSE:
-            oled_write_ln_P(PSTR("NAV"), false);
-            break;
-        case NUMBER:
-            oled_write_ln_P(PSTR("NUMBER"), false);
-            break;
-        case MOUSE:
-            oled_write_ln_P(PSTR("MOUSE"), false);
-            break;
-        case GAME:
-            oled_write_ln_P(PSTR("GAME"), false);
-            break;
-        default:
-            oled_write_ln_P(PSTR("HMMMM"), false);
-            break;
+    // if no layer is active (BASE)
+    if (layer_state == BASE) {
+        oled_write_ln_P(PSTR("BASE"), false);
+        return;
     }
+    // if only GAME is active
+    if (layer_state == GAME) {
+        oled_write_ln_P(PSTR("GAME"), false);
+        return;
+    }
+    // below we filter out layer states according to priority (higher layer number = priority over lower layers)
+    if ((layer_state & MOUSE) == MOUSE) {
+        oled_write_ln_P(PSTR("MOUSE"), false);
+        return;
+    }
+    if ((layer_state & NAV) == NAV) {
+        oled_write_ln_P(PSTR("NAV"), false);
+        return;
+    }
+    if ((layer_state & SYMB) == SYMB) {
+        oled_write_ln_P(PSTR("SYMB"), false);
+        return;
+    }
+    if ((layer_state & NUMBER) == NUMBER) {
+        oled_write_ln_P(PSTR("NUMBER"), false);
+        return;
+    }
+    else {
+        oled_write_ln_P(PSTR("Hmmmmm"), false);
+        return;
+    }
+    // switch (layer_state) {
+    //     // case NULLYBOI:
+    //     //     oled_write_ln_P(PSTR("NULLYBOI"), false);
+    //     //     break;
+    //     // case BASE_A:
+    //     //     oled_write_ln_P(PSTR("BASE_A"), false);
+    //     //     break;
+    //     // case BASE_I:
+    //     //     oled_write_ln_P(PSTR("BASE_I"), false);
+    //     //     break;
+    //     case BASE:
+    //         oled_write_ln_P(PSTR("BASE"), false);
+    //         break;
+    //     case GAME:
+    //     case GAME|SYMB:
+    //     case GAME|SYMB|NUMBER:
+    //     case GAME|SYMB|NUMBER|MOUSE:
+    //         oled_write_ln_P(PSTR("GAME"), false);
+    //         break;
+    //     case SYMB:
+    //     case SYMB|NUMBER:
+    //     case SYMB|NUMBER|MOUSE:
+    //         oled_write_ln_P(PSTR("SYMB"), false);
+    //         break;
+    //     case NAV:
+    //     case NAV|NUMBER:
+    //     case NAV|NUMBER|MOUSE:
+    //         oled_write_ln_P(PSTR("NAV"), false);
+    //         break;
+    //     case NUMBER:
+    //         oled_write_ln_P(PSTR("NUMBER"), false);
+    //         break;
+    //     case MOUSE:
+    //         oled_write_ln_P(PSTR("MOUSE"), false);
+    //         break;
+    //     default:
+    //         oled_write_ln_P(PSTR("HMMMM"), false);
+    //         break;
+    // }
 }
 
 
